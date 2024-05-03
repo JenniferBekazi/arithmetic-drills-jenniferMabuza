@@ -1,38 +1,287 @@
+
+
+
+/* Basic reset for body margins and padding */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Comic Sans MS', 'Arial Rounded', sans-serif; /* Kid-friendly font */
+}
+
+/* Main App container */
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  background-color: #95e292; /* Light blue background */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+/* Problem display */
+.problem {
+  font-size: 24px; /* Larger font for visibility */
+  margin: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #fff3e0; /* Soft orange background for the problem area */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Subtle shadow for 3D effect */
+}
+
+/* Input field styling */
+input[type="number"] {
+  font-size: 18px;
+  padding: 10px;
+  width: 200px; /* Sufficient width for easy click */
+  border: 2px solid #4caf50; /* Green border */
+  border-radius: 5px; /* Rounded borders */
+  margin: 10px;
+}
+
+/* Button styling */
+button {
+  background-color: #4caf50; /* Green background */
   color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 5px;
+  transition: background-color 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #45a049; /* Darker green on hover for interactive feel */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Feedback message styling */
+#feedback {
+  color: #d32f2f; /* Red color for feedback to make it stand out */
+  font-size: 20px;
+  margin: 20px;
+}
+
+/* Score display */
+#score {
+  font-size: 22px;
+  color: #333; /* Darker text for better readability */
+  margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+.Animal-icon {
+  width: 50px;  
+  height: auto;
+  position: absolute; 
+  top: 45px;
+  left: 110px;
+}
+
+.App-header {
+  position: relative;  
+  text-align: center;
+  padding: 20px;
+}
+
+body {
+  background-image: url('./assets/icons/butterfly.png');
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.Animal-icon:hover {
+  transform: scale(1.1);  
+  transition: transform 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .Animal-icon {
+    width: 30px;  
+    top: 10px;
+    left: 10px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+
+.Animal1-icon {
+  width: 50px;  
+  height: auto;
+  position: relative; 
+  top: 20px;
+  right: 20px;
+}
+
+.App-header {
+  position: relative;  
+  text-align: center;
+  padding: 20px;
+}
+
+body {
+  background-image: url('./assets/icons/owl.webp');
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.Animal1-icon:hover {
+  transform: scale(1.1);  
+  transition: transform 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .Animal1-icon {
+    width: 30px;  
+    top: 10px;
+    right: 10px;
+  }
+}
+
+
+.Animal2-icon {
+  width: 50px;  
+  height: auto;
+  position: relative; 
+  bottom: 20px;
+  left: 250px;
+}
+
+.App-header {
+  position: relative;  
+  text-align: center;
+  padding: 20px;
+}
+
+body {
+  background-image: url('./assets/icons/crocodile.png');
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.Animal2-icon:hover {
+  transform: scale(1.1);  
+  transition: transform 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .Animal2-icon {
+    width: 30px;  
+    bottom: 10px;
+    right: 10px;
+  }
+}
+
+
+.Anima3-icon {
+  width: 50px;  
+  height: auto;
+  position: absolute; 
+  top: 20px;
+  left: 110px;
+}
+
+.App-header {
+  position: relative;  
+  text-align: center;
+  padding: 20px;
+}
+
+body {
+  background-image: url('./assets/icons/tiger.png');
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.Animal-icon:hover {
+  transform: scale(1.1);  
+  transition: transform 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .Animal-icon {
+    width: 30px;  
+    top: 10px;
+    left: 10px;
+  }
+}
+
+
+.Animal4-icon {
+  width: 50px;  
+  height: auto;
+  position: absolute; 
+  bottom: 45px;
+  left: 120px;
+}
+
+.App-header {
+  position: relative;  
+  text-align: center;
+  padding: 20px;
+}
+
+body {
+  background-image: url('./assets/icons/tortoise.png');
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.Animal-icon:hover {
+  transform: scale(1.1);  
+  transition: transform 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .Animal4-icon {
+    width: 30px;  
+    bottom: 10px;
+    left: 10px;
+  }
+}
+
+.Animal5-icon {
+  width: 50px;  
+  height: auto;
+  position: relative; 
+  bottom: 30px;
+  left: 250px;
+}
+
+.App-header {
+  position: relative;  
+  text-align: center;
+  padding: 20px;
+}
+
+body {
+  background-image: url('./assets/icons/elephant.png');
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.Animal5-icon:hover {
+  transform: scale(1.1);  
+  transition: transform 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .Animal5-icon {
+    width: 30px;  
+    bottom: 10px;
+    right: 10px;
   }
 }
